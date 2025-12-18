@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Banana Tree School</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
+    header { background: #4CAF50; color: white; padding: 20px; text-align: center; }
+    nav { background: #333; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .photo-frame {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .caption {
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    footer { background: #4CAF50; color: white; text-align: center; padding: 15px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Banana Tree School Gallery</h1>
+    <p>Moments from our campus and events</p>
+  </header>
+
+  <nav>
+    <a href="bananatree2.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+
+  <div class="gallery-container">
+    <div class="photo-frame">
+      <img src="classroom.jpeg" alt="Classroom Activity">
+      <div class="caption">Classroom Activities</div>
+    </div>
+
+    <div class="photo-frame">
+      <img src="sports day.png" alt="Sports Day">
+      <div class="caption">Sports Day</div>
+    </div>
+
+    <div class="photo-frame">
+      <img src="Annual-Day-pic.jpg" alt="Annual Function">
+      <div class="caption">Annual Function</div>
+    </div>
+
+    <div class="photo-frame">
+      <img src="schoolcampus.jpeg" alt="School Campus">
+      <div class="caption">School Campus</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Banana Tree School</p>
+  </footer>
+
+</body>
+</html>
